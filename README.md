@@ -2,7 +2,6 @@
 ==============
 
 Web Component wrapper for Google Adsense code using [Polymer](http://polymer-project.org).
-
 > Maintained by [Kessiler Rodrigues](https://github.com/kessiler).
 
 
@@ -62,6 +61,7 @@ To make the ad responsive, you must create media queries for the class "ads-resp
     @media(min-width: 500px) { .ads-responsive { width: 468px; height: 60px; } }
     @media(min-width: 800px) { .ads-responsive { width: 728px; height: 90px; } }
     ```
+
 ## Development
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
