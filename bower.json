@@ -1,0 +1,19 @@
+{
+    "name": "google-adsense",
+    "version": "0.0.1",
+    "description": "Web Component wrapper for Google Adsense code using Polymer.",
+    "license": "MIT",
+    "keywords": [
+        "polymer",
+        "web-components",
+        "google-adsense"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#~0.3.3"
+    }
+}
