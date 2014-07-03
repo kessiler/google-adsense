@@ -1,0 +1,35 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<polymer-element name="google-adsense" attributes="client slot width height">
+    <script>
+        Polymer("google-adsense", {
+            client : 8949501714982201,
+            slot   : 2732884579,
+            width  : 728,
+            height : 90,
+
+            ready: function () {
+                var body = document.body,
+                    script = document.createElement("script"),
+                    insAds = document.createElement("ins"),
+                    adsbygoogle = document.createElement("script");
+
+                insAds.setAttribute('class', 'adsbygoogle ads-responsive');
+                insAds.setAttribute('style', 'display: inline-block; width: ' + this.width + 'px; height: ' + this.height + 'px;');
+                insAds.setAttribute('data-ad-client', 'ca-pub-' + this.client);
+                insAds.setAttribute('data-ad-slot', this.slot);
+
+                script.setAttribute("type", "text/javascript");
+                script.setAttribute("src", "http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js");
+                script.setAttribute("async", true);
+
+                adsbygoogle.innerText = '(adsbygoogle = window.adsbygoogle || []).push({});';
+
+                this.appendChild(insAds);
+                body.appendChild(script);
+                body.appendChild(adsbygoogle);
+            }
+        });
+    </script>
+
+</polymer-element>

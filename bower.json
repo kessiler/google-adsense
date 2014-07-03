@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "Web Component wrapper for Google Adsense code using Polymer.",
     "license": "MIT",
+    "main": "dist/google-adsense.html",
     "keywords": [
         "polymer",
         "web-components",
